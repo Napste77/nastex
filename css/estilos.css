@@ -1,0 +1,251 @@
+@-webkit-keyframes baja-sube {
+  0% {
+    -webkit-transform: translatey(20px);
+            transform: translatey(20px);
+  }
+  25% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  100% {
+    -webkit-transform: translatey(20px);
+            transform: translatey(20px);
+  }
+}
+
+@keyframes baja-sube {
+  0% {
+    -webkit-transform: translatey(20px);
+            transform: translatey(20px);
+  }
+  25% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  100% {
+    -webkit-transform: translatey(20px);
+            transform: translatey(20px);
+  }
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  color: #DDDDDE;
+}
+
+body nav {
+  width: 100%;
+  z-index: 70;
+}
+
+body nav span i {
+  color: #DDDDDE;
+  font-size: 1.5em;
+}
+
+body nav .marca {
+  margin: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+  color: #DDDDDE;
+  text-decoration: none;
+  float: left;
+  width: 49%;
+}
+
+body nav .menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body nav .menu li {
+  margin-right: 2em;
+}
+
+body nav .menu li a {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  color: #DDDDDE;
+  margin: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+body nav .menu li a:hover {
+  color: #e68434;
+}
+
+body nav .menu li a:active {
+  color: #e68434;
+}
+
+body .center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body header {
+  background: #37393f;
+  background: radial-gradient(circle, #37393f 0%, #22242a 100%);
+}
+
+body header .hola {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -1em;
+}
+
+body header .hola p {
+  font-size: 1.25em;
+  font-weight: 300;
+  color: #DDDDDE;
+  margin-right: 1.25em;
+  float: left;
+}
+
+body header .hola hr {
+  border: none;
+  height: 2px;
+  width: 70%;
+  background-color: #DDDDDE;
+  float: left;
+}
+
+body header h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 5.5em;
+  letter-spacing: 10px;
+  color: #e68434;
+}
+
+body header .lineab {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+body header .lineab hr {
+  border: none;
+  height: 2px;
+  width: 75%;
+  background-color: #DDDDDE;
+  float: left;
+}
+
+body header .lineab p {
+  text-align: right;
+  font-size: 1.275em;
+  font-weight: 300;
+  color: #DDDDDE;
+}
+
+body header .contenedor-flecha {
+  text-align: center;
+  position: absolute;
+  z-index: 99;
+  bottom: 3%;
+  left: 50%;
+  -webkit-animation: baja-sube 1s ease infinite;
+          animation: baja-sube 1s ease infinite;
+}
+
+body header .contenedor-flecha p {
+  font-size: 2.25em;
+}
+
+body header .contenedor-flecha p a {
+  text-decoration: none;
+  color: #DDDDDE;
+}
+
+body .quien {
+  background: #3d424f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3d424f), to(#2e323c));
+  background: linear-gradient(180deg, #3d424f 0%, #2e323c 100%);
+}
+
+body .quien h2 {
+  font-size: 2.25em;
+  letter-spacing: 5px;
+  margin: 0 auto 1em auto;
+  text-align: center;
+}
+
+body .quien p {
+  width: 75%;
+  margin: 1.5em auto;
+  line-height: 2em;
+  text-align: justify;
+}
+
+body .quien p .naranja {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #e68434;
+}
+
+body .quien .fp-controlArrow.fp-next,
+body .quien .fp-controlArrow.fp-prev {
+  top: 95%;
+}
+
+body .quien .fp-controlArrow.fp-prev {
+  left: 86%;
+  border-width: 20px 20px 20px 0;
+  border-color: transparent #d2d2d2 transparent transparent;
+}
+
+body .quien .fp-controlArrow.fp-next {
+  right: 50px;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent #d2d2d2;
+}
+
+body .porta {
+  background: #2e323c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2e323c), to(#3d424f));
+  background: linear-gradient(180deg, #2e323c 0%, #3d424f 100%);
+}
+
+body .porta .carta {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 0 45px;
+  background-color: #d6d2d2;
+}
+
+body .porta .carta a i {
+  text-decoration: none;
+  color: transparent;
+  cursor: auto;
+  margin-left: 120px;
+  margin-top: 130px;
+  font-size: 3em;
+}
+
+body .porta .carta:hover {
+  cursor: pointer;
+  background: #f2f2f2;
+  background: radial-gradient(circle, #f2f2f2 0%, #d9d9d9 100%);
+}
+
+body .porta .carta:hover i {
+  color: #e68434;
+  cursor: pointer;
+}
+
+body .porta .carta img {
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=estilos.css.map */
